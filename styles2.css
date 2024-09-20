@@ -1,0 +1,346 @@
+/* Style Kerangka Secara Umum */
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    caret-color: transparent;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seluruh Komponen Pada Header */
+.logo {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Align items vertically */
+}
+
+.logo img {
+    width: 80px;
+    /* Set the width of the logo */
+    margin-right: 10px;
+    /* Add some space between the image and title */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* ini catatan */
+/* Map Section */
+#map {
+    width: 95%;
+    height: 800px;
+    background-color: rgb(186, 110, 188);
+    margin: 40px auto;
+    /* Adjusted margin for space */
+    border: 2px solid #af23af1e;
+    /* Add a border with a subtle color */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    /* Relative positioning for child elements */
+    z-index: 13;
+    /* Set z-index to be behind the header */
+}
+
+#map-section h2 {
+    text-align: center;
+    margin-top: 20;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Data Section Styles */
+#data-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+#data-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    justify-content: flex-start;
+}
+
+#data-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 5px);
+    max-width: calc(33.33% - 5px);
+    margin-bottom: 10px;
+}
+
+.data-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(63, 105, 172, 0.948);
+    overflow: hidden;
+    margin: auto 10px;
+}
+
+.data-item img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.description h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* logo di header */
+.logo {
+    display: flex;
+    align-items: center;
+}
+/* ukuran logo */
+.logo img {
+    width: 300px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* header atas utama */
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem;
+}
+/* header informasi */
+.header-top {
+    background-color: #EEE9DA;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Header informasi */
+.header-left {
+    position: relative;
+    background-color: #6096B4;
+    color: #ffffff;
+    border: none;
+    padding: 0.3rem 1rem; /*cont informasi*/
+    font-size: 13px;
+    position: fixed;
+    text-align: center;
+}
+/* header utama */
+.header-main {
+    background-color: #93BFCF;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* all header */
+#navbar{
+    top: 0;
+    background-color: #ffffff;
+    position: fixed;
+    padding: 0px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-bottom: 2px solid #273262;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+/* navigasi bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+/* Piliihan */
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+/* color block */
+nav ul li a:hover {
+    background-color: #BDCDD6;
+}
+/* drop down */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #BDCDD6;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    float: none;
+}
+nav ul li ul li a {
+    padding: 5px 8px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;   
+}
+/* jarak antar nav */
+nav ul li {
+    margin: 1.5rem;
+}
+
+/* navigasi bar */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+    /* Needed for pseudo-element positioning */
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    /* Move the pseudo-element up by half of the hover size */
+    left: 7px;
+    /* Move the pseudo-element left by half of the hover size */
+    width: calc(100% + 7px);
+    /* Expand the width by 14 pixels (7px on each side) */
+    height: calc(100% + 7px);
+    /* Expand the height by 14 pixels (7px on each side) */
+    background-color: #6096B4;
+    /* Background color without transparency */
+    border-radius: 5px;
+    /* Rounded corners */
+    z-index: -1;
+    /* Behind the text */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+}
+
+nav ul li a:hover::before {
+    background-color: #ffffff;
+    /* Adjusted hover color without transparency */
+}
+
+nav ul li a:hover {
+    color: #214b62;
+    /* Adjusted font color to match hover color */
+}
+
+/* ////////////////////////////////// */
+/* Author Section */
+#author-section {
+    background-color: #BDCDD6;
+    padding: 20px 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.author-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.author-content h2 {
+    text-align: center;
+    font-size: 18px;
+}
+.author-content h3{
+    font-size: 16px;
+}
+
+.author-content p{
+    font-size: 16px;
+}
+
+.author-name {
+    text-align: center;
+    font-size: 16px;
+    /* Center-align only the author's name */
+}
+
+.profile-picture {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    /* Center the picture horizontally and add margin at the bottom */
+    display: block;
+    /* Ensure it behaves as a block element */
+}
+
+#footer {
+    background-color: #6096B4;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    flex-shrink: 0;
+}
+.footer-content h3 {
+    font-size: 15px;
+}
+.footer-content p{
+    font-size: 13px;
+}
+.end-footer p {
+    font-size: 13px;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    gap: 1.5rem;
+    background-color: #6096B4;
+    font-size: 13px;
+    align-items: center;
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
+}
